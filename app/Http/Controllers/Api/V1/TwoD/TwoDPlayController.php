@@ -4,14 +4,14 @@ namespace App\Http\Controllers\Api\V1\TwoD;
 
 use Illuminate\Http\Request;
 use App\Models\TwoD\HeadDigit;
+use App\Models\TwoD\TwodSetting;
+use App\Services\TwoDPlayService;
 use Illuminate\Http\JsonResponse;
 use App\Models\TwoD\CloseTwoDigit;
 use App\Models\TwoD\TwodGameResult;
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
-use App\Services\TwoD\TwoDPlayService;
 use App\Http\Requests\TwoD\TwoDPlayRequest;
-use App\Models\TwoD\TwodSetting;
 
 class TwoDPlayController extends Controller
 {
@@ -22,15 +22,6 @@ class TwoDPlayController extends Controller
     {
         //
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
     /**
      * Store a newly created resource in storage.
      */

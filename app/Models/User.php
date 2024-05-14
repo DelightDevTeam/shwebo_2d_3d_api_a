@@ -30,23 +30,42 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+        'user_name',
         'name',
-        'profile',
         'email',
+        'phone',
         'password',
         'profile',
-        'profile_mime',
-        'profile_size',
-        'phone',
-        'address',
+        'register_type',
+        'third_party_id',
+        'token',
+        'device_id',
+        'fcm_token',
+        'gem',
+        'bonus',
+        'limit',
+        'limit3',
+        'cor',
+        'cor3',
+        'zero',
+        'remark',
+        'chk',
+        'language',
+        'active',
         'kpay_no',
         'cbpay_no',
         'wavepay_no',
         'ayapay_no',
-        'balance',
+        'lottery_balance',
+        'max_score',
         'agent_id',
-        'status'
+        'slot_wallet',
+        'lottery_wallet',
+        'status',
+        'type',
+        'is_changed_password',
     ];
+
     protected $dates = ['created_at', 'updated_at'];
 
 
